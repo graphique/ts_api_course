@@ -12,7 +12,7 @@ afterAll(async()=>{
     await methods.deleteCategory(category._id, baseTest.token);
 });
 
-test.only('PUT/categories{id}',async()=>{
+test('PUT/categories{id}',async()=>{
     const body = {
         "name": category.name + ' changed'
     };
