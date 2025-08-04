@@ -13,3 +13,12 @@ export async function createCategory(token: string) {
       expect(response.body.name).toBe(body.name);
       return response.body;
 }
+
+export async function deleteCategory (id: string, token: string) {
+    const response = await brandsRequest
+    .del(`/categories/${id}`)
+    .set('Authorization', `Bearer ${token}`);
+    console.log(response.body);
+    expect(response.statusCode).toBe(200);
+    expect(response.body._id).toContain(id);
+}
