@@ -54,19 +54,3 @@ export async function putBrands (id: string|number, data: Object) {
 export async function getCategories () {
     return await brandsRequest.get('/categories');
 }
-
-export async function getToken () {
-    const data = {
-        'email' : Variables.adminEmail,
-        'password' : Variables.adminPassword
-    };
-    const response = await brandsRequest
-    .post('/admin/login')
-    .send(data);
-    expect(response.status).toBe(200);
-    const token = response.body.token;
-    return token;
-} 
-
-
-
