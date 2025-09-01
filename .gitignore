@@ -1,2 +1,5 @@
 .env
 package-lock.json
+node-modules
+junit.xml
+reports
