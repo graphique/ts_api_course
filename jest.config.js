@@ -5,9 +5,7 @@ module.exports = {
   transform: { "^.+\.tsx?$": ["ts-jest",{}],},
   reporters: [
     'default',
-    ['jest-junit', {
-      outputDirectory: 'reports'
-    }
-  ]
+    ['jest-junit', {outputDirectory: 'reports'}],
+    ['jest-html-reporters', {publicPath: 'reports'}]
   ]
 };

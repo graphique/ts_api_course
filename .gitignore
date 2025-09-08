@@ -3,3 +3,4 @@ package-lock.json
 node_modules
 junit.xml
 reports
+jest-html-reporters-attach
