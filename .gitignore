@@ -4,3 +4,4 @@ node_modules
 junit.xml
 reports
 jest-html-reporters-attach
+specs/example.spec.ts
