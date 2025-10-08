@@ -1,6 +1,7 @@
 /** @type {import('ts-jest').JestConfigWithTsJest} **/
 module.exports = {
-  testEnvironment: "node",
+  //estEnvironment: "node",
+  testEnvironment: "allure-jest/node",
   preset: 'ts-jest',
   transform: { "^.+\.tsx?$": ["ts-jest",{}],},
   reporters: [
