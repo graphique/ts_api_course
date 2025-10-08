@@ -1,4 +1,3 @@
-import { brandsRequest } from '../../api/apiClient';
 import * as methods from '../../api/uploads/methods';
 
 test('POST/upload/multiple',async()=>{

@@ -7,3 +7,4 @@ jest-html-reporters-attach
 tests/example.spec.ts
 allure-results/
 test-results/
+gitRoutine.sh
